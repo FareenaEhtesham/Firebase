@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <center>
+        <form enctype="multipart/form-data">
+            <label>select image : </label>
+            <input type="file" id="image" accept="image/*"><br><br>
+            <button type="button" onclick="upload()">Upload</button>
+        </form>
+
+        <div id="Download_Link"></div>
+    </center>
+    
+    
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-storage.js"></script> 
+<!--i used b/c image are store in storage-->
+
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDpks_1bp_HS7WYcn2FeAzxdIhnL1tp_rc",
+    authDomain: "first-database-20bc9.firebaseapp.com",
+    databaseURL: "https://first-database-20bc9.firebaseio.com",
+    projectId: "first-database-20bc9",
+    storageBucket: "first-database-20bc9.appspot.com",
+    messagingSenderId: "305271763216",
+    appId: "1:305271763216:web:0a79becab17c46f73fb595",
+    measurementId: "G-SGD2VDEWJS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const db =firebase.firestore(); 
+</script>
+<script src="Upload_Image.js"></script>
+
+</html>
