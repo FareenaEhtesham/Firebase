@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Phone Number Authentication</title>
+</head>
+<body>
+<h1>Enter number:</h1>
+<form>
+    <input type="text" id="number" placeholder="+923********">
+    <div id="recaptcha-container"></div>
+    <button type="button" onclick="phoneAuth();">SendCode</button>
+</form><br>
+
+<h1>Enter Verification code</h1>
+
+<form>
+    <input type="text" id="verificationCode" placeholder="Enter verification code">
+    <button type="button" onclick="codeverify();">Verify code</button>
+
+</form>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+
+<script src="PhoneNumber.js"></script>
+</body>
+</html>
