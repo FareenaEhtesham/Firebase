@@ -1,0 +1,57 @@
+<html> 
+    <head>
+        <title>Forget Pssword Using Firebase</title>
+        <link rel="stylesheet" href="FP.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+    <body>
+<h1>Forget Password</h1>
+<form id="msform">
+  <fieldset>
+    
+    <label>Please Enter your Email so we will reset your password</label>
+
+                <br/><br/>
+   
+    <input type="text" id="email" placeholder="Email" />
+
+                <br/><br/>
+    
+    <button type="button" >Reset Password</button>
+
+                 <br/><br/>
+  </fieldset>
+ 
+</form>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_E8nHPMqc_Ox6cdU2E_ikQj2cnxFsfzw",
+    authDomain: "website-18fb0.firebaseapp.com",
+    databaseURL: "https://website-18fb0.firebaseio.com",
+    projectId: "website-18fb0",
+    storageBucket: "website-18fb0.appspot.com",
+    messagingSenderId: "12674300329",
+    appId: "1:12674300329:web:f1ddd1a56aafdaf7cf6cb8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const db =firebase.firestore();
+</script>
+
+
+<script src="FP.js"></script>
+
+
+</body>
+</html>
